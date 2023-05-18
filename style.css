@@ -1,0 +1,66 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+    font-family: Besley, serif;
+    /* background-color: #00142b; */
+    color: #a58cfc;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #545fac;
+    padding: 24px auto;
+
+
+}
+.header p{
+    font-size: 48px;
+    font-weight: bold;
+}
+.paraChoose ,.endGame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    padding: 24px auto;
+}
+.weaponPlayer ,.weaponComputer{
+    width: 250px;
+    height: auto;
+}
+.weapon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+.score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    padding: 16px;
+}
+.choose{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+
+}
+.rock ,.paper ,.scissor{
+    width: 200px;
+    height: auto;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer p{
+    font-size: 18px;
+
+}
