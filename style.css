@@ -28,7 +28,7 @@ body{
     padding: 24px auto;
 }
 .weaponPlayer ,.weaponComputer{
-    width: 250px;
+    width: 200px;
     height: auto;
 }
 .weapon{
@@ -51,9 +51,14 @@ body{
     gap: 24px;
 
 }
-.rock ,.paper ,.scissor{
+.inputImg{
     width: 200px;
     height: auto;
+}
+
+.gameDisplay {
+    text-align: center;
+    margin: 20px;
 }
 .footer{
     display: flex;
