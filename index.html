@@ -4,41 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Rock-Paper-Scissor</title>
+    <link rel="stylesheet" href="styleIndex.css">
+    <title>Home</title>
 </head>
 <body>
     <div class="header">
-        <p>Rock Paper Scissor</p>
+        <p class="head">Choose game mode <br><br>
+                        Rock Paper Scissors</p>
     </div>
-
     <div class="body">
-        <p class="paraChoose">Choose a weapon</p>
-        <p class="endGame">When the score reaches 5, the game ends</p>
-        <div class="weapon">
-            <img class="weaponPlayer" id="scorePlayer" type="image" src="./img/questionMark.jpg" alt="questionMark">
-            <img class="weaponComputer" id="scoreComputer" type="image" src="./img/questionMark.jpg" alt="questionMark">
-        </div>
-        <div class="score">
-            <label for="scorePlayer" id="countPlayer">Player : 0</label>
-           
-            <label for="scoreComputer" id="countComputer">Computer : 0</label>
-
-            
-        </div>
-        <div class="gameDisplay">
-            <p id="gameResult"></p>
-        </div>
-        <div class="choose">
-            <input class="inputImg" id="rock" type="image" src="./img/rock.jpg" alt="imgRock" onclick="gameStart(this)">
-            <input class="inputImg" id="paper" type="image" src="./img/paper.jpg" alt="paper" onclick="gameStart(this)">
-            <input class="inputImg" id="scissors" type="image" src="./img/scissor.jpg" alt="scissor" onclick="gameStart(this)">
-        </div>
+        <a href="gameComputer.html" class="linkGame">
+            <button class="buttonGame">Player VS Computer game mode</button>
+        </a>
+        <a href="gamePlayer.html" class="linkGame">
+            <button class="buttonGame">Player1 VS Player2 game mode</button>
+        </a>
     </div>
-
     <div class="footer">
-        <p>@Copyright 2023 </p>
+        @Copyright 2023
     </div>
-    <script src="gameFunc.js"></script>
 </body>
 </html>
