@@ -80,6 +80,12 @@ scalingInputs.forEach(function(input) {
   input.addEventListener('mouseout', function() {
     input.style.transform = 'scale(1)';
   });
+
+  input.addEventListener('click', function() {
+    setTimeout(function() {
+      input.style.transform = 'scale(1)';
+    }, 500);
+  });
 });
 
 

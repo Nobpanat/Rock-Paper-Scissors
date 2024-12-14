@@ -94,19 +94,25 @@ function gameStartPVP(element){
         click2time = 0;
     }
 
-    
+        
 
 }
 
 
-// var scalingInputs = document.querySelectorAll('.inputImg');
+var scalingInputs = document.querySelectorAll('.inputImg');
 
-// scalingInputs.forEach(function(input) {
-//   input.addEventListener('mouseover', function() {
-//     input.style.transform = 'scale(1.2)';
-//   });
+scalingInputs.forEach(function(input) {
+  input.addEventListener('mouseover', function() {
+    input.style.transform = 'scale(1.2)';
+  });
 
-//   input.addEventListener('mouseout', function() {
-//     input.style.transform = 'scale(1)';
-//   });
-// });
+  input.addEventListener('mouseout', function() {
+    input.style.transform = 'scale(1)';
+  });
+
+  input.addEventListener('click', function() {
+    setTimeout(function() {
+      input.style.transform = 'scale(1)';
+    }, 500);
+  });
+});

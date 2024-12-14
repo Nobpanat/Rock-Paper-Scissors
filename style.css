@@ -1,106 +1,150 @@
-body{
+body {
     display: flex;
     flex-direction: column;
-    /* margin: 0;
-    min-height: 100vh; */
+    justify-content: center;
+    align-items: center;
     height: 100%;
     margin: 0;
     padding: 0;
     font-family: Besley, serif;
-    /* background-color: #00142b; */
     color: #a58cfc;
+    background-color: #00142b;
 }
-.header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #545fac;
-    /* padding: 24px auto; */
 
-
-}
-.header p{
-    font-size: 42px;
-    font-weight: bold;
+.header {
     text-align: center;
+    color: #545fac;
+    padding: 1.25rem;
 }
-.paraChoose ,.endGame{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    /* padding: 24px auto; */
-}
-.weaponPlayer ,.weaponComputer{
-    width: auto;
-    height: 180px;
-}
-.weapon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-}
-.score{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 150px;
-    padding: 16px;
-}
-.choose{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
 
+.header h1 {
+    font-size: 3.25rem;
+    font-weight: bold;
+    margin: 0;
 }
-.inputImg{
-    width: auto;
-    height: 180px;
+
+.header p {
+    font-size: 1.5rem;
+    margin: 10px 0 0;
+}
+
+.main-content {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.instructions {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.paraChoose,
+.endGame {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.weapon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1.25 0;
+}
+
+.weapon img {
+    width: 12rem;
+    height: auto;
+}
+
+.score {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.score label {
+    font-size: 24px;
 }
 
 .gameDisplay {
     text-align: center;
     margin: 20px;
 }
-#gameResult {
-    font-size: 18px;
-}
-.home {
+
+.choose {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    margin-top: 60px;
+    margin: 20px 0;
 }
 
-.linkGame {
-    text-decoration: none;
+.inputImg {
+    width: 10rem;
+    height: auto;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: #a58cfc;
+}
+
+.footer p {
+    margin: 10px 0 0;
 }
 
 .buttonGame {
-    border-radius: 8px;
-    font-size: 16px;
+    border-radius: 2.5rem;
+    font-size: 1rem;
     cursor: pointer;
     text-decoration: none;
     border: none;
-    padding: 10px 20px;
-    background-color: #545fac ;
+    padding: 1rem 2rem;
+    background-color: #545fac;
     color: #fff;
-    width: 100px;
-    /* display: inline-block; */
+    width: 8rem;
+
+    /* display: flex; */
+    /* align-items: center;
+    justify-content: center;
+    text-align: center; */
 }
+
 
 .buttonGame:hover {
-    background-color:#a58cfc;
+    background-color: #a58cfc;
 }
-.footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.footer p{
-    font-size: 18px;
 
+@media (max-width: 600px) {
+    .weapon {
+        flex-direction: column;
+    }
+
+    .score {
+        flex-direction: column;
+    }
+
+    .score label {
+        margin: 10px 0;
+    }
+
+    .choose {
+        flex-direction: column;
+    }
+
+
+    .choose .inputImg {
+        margin: 0.5rem 0;
+        width: 6rem;
+        height: auto;
+    }
+
+    .weapon img {
+        width: 6rem;
+        height: auto;
+        margin: 0.5rem 0;
+    }
 }

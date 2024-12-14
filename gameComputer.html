@@ -8,42 +8,44 @@
     <title>Rock-Paper-Scissor</title>
 </head>
 <body>
-    <div class="header">
-        <p>    Rock Paper Scissor<br><br>
-        Player  VS  Computer mode</p>
-    </div>
+    <header class="header">
+        <h1>Rock Paper Scissor</h1>
+        <p>Player VS Computer mode</p>
+    </header>
 
-    <div class="body">
-        <p class="paraChoose">Choose a weapon</p>
-        <p class="endGame">When the score reaches 5, the game ends</p>
-        <div class="weapon">
-            <img class="weaponPlayer" id="scorePlayer" type="image" src="./img/questionMark.jpg" alt="questionMark">
-            <img class="weaponComputer" id="scoreComputer" type="image" src="./img/questionMark.jpg" alt="questionMark">
-        </div>
-        <div class="score">
+    <main class="main-content">
+        <section class="instructions">
+            <p class="paraChoose">Choose a weapon</p>
+            <p class="endGame">When the score reaches 5, the game ends</p>
+        </section>
+
+        <section class="weapon">
+            <img class="weaponPlayer" id="scorePlayer" src="./img/questionMark.jpg" alt="questionMark">
+            <img class="weaponComputer" id="scoreComputer" src="./img/questionMark.jpg" alt="questionMark">
+        </section>
+
+        <section class="score">
             <label for="scorePlayer" id="countPlayer">Player : 0</label>
-           
             <label for="scoreComputer" id="countComputer">Computer : 0</label>
-        </div>
-        <div class="gameDisplay">
-            <p id="gameResult"></p>
-        </div>
-        <div class="choose">
-            <input class="inputImg" id="rock" type="image" src="./img/rock.jpg" alt="imgRock" onclick="gameStart(this)">
-            <input class="inputImg" id="paper" type="image" src="./img/paper.jpg" alt="paper" onclick="gameStart(this)">
-            <input class="inputImg" id="scissors" type="image" src="./img/scissor.jpg" alt="scissor" onclick="gameStart(this)">
-        </div>
-    </div>
+        </section>
 
-    <div class="home">
+        <section class="gameDisplay">
+            <p id="gameResult"></p>
+        </section>
+
+        <section class="choose">
+            <input class="inputImg" id="rock" type="image" src="./img/rock.jpg" alt="imgRock" onclick="gameStart(this)">
+            <input class="inputImg" id="paper" type="image" src="./img/paper.jpg" alt="imgPaper" onclick="gameStart(this)">
+            <input class="inputImg" id="scissors" type="image" src="./img/scissor.jpg" alt="imgScissor" onclick="gameStart(this)">
+        </section>
+    </main>
+
+    <footer class="footer">
         <a href="index.html" class="linkGame">
             <button class="buttonGame">HOME</button>
         </a>
-    </div>
-
-    <div class="footer">
-        <p>@Copyright 2023 </p>
-    </div>
+        <p>&copy; 2023 Rock-Paper-Scissor Game</p>
+    </footer>
     
     <script src="gameFunc.js"></script>
 </body>

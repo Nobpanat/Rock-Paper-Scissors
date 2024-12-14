@@ -8,43 +8,38 @@
     <title>Player game mode</title>
 </head>
 <body>
-    <div class="header">
-        <p>Rock Paper Scissor<br><br>
-            Player1  VS  Player2
-        </p>
-    </div>
-    <div class="body">
+    <header class="header">
+        <h1>Rock Paper Scissor</h1>
+        <p>Player1 VS Player2</p>
+    </header>
+    <main class="main-content">
+        <section class="instructions">
             <p class="paraChoose">Choose a weapon</p>
             <p class="endGame">When the score reaches 5, the game ends</p>
-            <div class="weapon">
-                <img class="weaponPlayer" id="scorePlayer1" type="image" src="./img/questionMark.jpg" alt="questionMark">
-                <img class="weaponComputer" id="scorePlayer2" type="image" src="./img/questionMark.jpg" alt="questionMark">
-            </div>
-            <div class="score">
-                <label for="scorePlayer1" id="countPlayer1">Player1 : 0</label>
-            
-                <label for="scorePlayer2" id="countPlayer2">Player2 : 0</label>
-            </div>
-            <div class="gameDisplay">
-                <p id="gameResult"></p>
-            </div>
-            <div class="choose">
-                <input class="inputImg" id="rock" type="image" src="./img/rock.jpg" alt="imgRock" onclick="gameStartPVP(this)">
-                <input class="inputImg" id="paper" type="image" src="./img/paper.jpg" alt="paper" onclick="gameStartPVP(this)">
-                <input class="inputImg" id="scissors" type="image" src="./img/scissor.jpg" alt="scissor" onclick="gameStartPVP(this)">
-            </div>
-    </div>
-
-    <div class="home">
+        </section>
+        <section class="weapon">
+            <img class="weaponPlayer" id="scorePlayer1" src="./img/questionMark.jpg" alt="questionMark">
+            <img class="weaponPlayer" id="scorePlayer2" src="./img/questionMark.jpg" alt="questionMark">
+        </section>
+        <section class="score">
+            <label for="scorePlayer1" id="countPlayer1">Player1 : 0</label>
+            <label for="scorePlayer2" id="countPlayer2">Player2 : 0</label>
+        </section>
+        <section class="gameDisplay">
+            <p id="gameResult"></p>
+        </section>
+        <section class="choose">
+            <input class="inputImg" id="rock" type="image" src="./img/rock.jpg" alt="imgRock" onclick="gameStartPVP(this)">
+            <input class="inputImg" id="paper" type="image" src="./img/paper.jpg" alt="imgPaper" onclick="gameStartPVP(this)">
+            <input class="inputImg" id="scissors" type="image" src="./img/scissor.jpg" alt="imgScissor" onclick="gameStartPVP(this)">
+        </section>
+    </main>
+    <footer class="footer">
         <a href="index.html" class="linkGame">
             <button class="buttonGame">HOME</button>
         </a>
-    </div>
-
-    <div class="footer">
-        <p>@Copyright 2023 </p>
-    </div>
-
+        <p>&copy; 2023 Rock-Paper-Scissor Game</p>
+    </footer>
     <script src="gameFuncPlayer.js"></script>
 </body>
 </html>
