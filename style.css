@@ -1,150 +1,171 @@
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: Besley, serif;
-    color: #a58cfc;
-    background-color: #00142b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Besley, serif;
+  color: #a58cfc;
+  background-color: #00142b;
 }
 
 .header {
-    text-align: center;
-    color: #545fac;
-    padding: 1.25rem;
+  text-align: center;
+  color: #545fac;
 }
 
 .header h1 {
-    font-size: 3.25rem;
-    font-weight: bold;
-    margin: 0;
+  font-size: 3.25rem;
+  font-weight: bold;
+  margin: 1rem;
 }
 
 .header p {
-    font-size: 1.5rem;
-    margin: 10px 0 0;
+  font-size: 1.5rem;
+  margin: 10px 0 0;
 }
 
 .main-content {
+    flex: 1; /* ดัน footer ลงล่างสุด */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
     max-width: 800px;
-    padding: 20px;
     box-sizing: border-box;
 }
 
 .instructions {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .paraChoose,
 .endGame {
-    font-size: 24px;
-    margin: 10px 0;
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
 }
 
 .weapon {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 1.25 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1.25 0;
 }
 
 .weapon img {
-    width: 12rem;
-    height: auto;
+  width: 10rem;
+  height: 8rem;
+  object-fit: scale-down;
 }
 
 .score {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem 0;
 }
 
 .score label {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .gameDisplay {
-    text-align: center;
-    margin: 20px;
+  text-align: center;
+  margin: 0.5rem;
 }
 
 .choose {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
 }
 
 .inputImg {
-    width: 10rem;
-    height: auto;
+  width: 10rem;
+  height: 8rem;
+  object-fit: scale-down;
 }
 
 .footer {
-    text-align: center;
-    padding: 20px;
-    color: #a58cfc;
+  text-align: center;
+  padding: 20px;
+  color: #a58cfc;
 }
 
 .footer p {
-    margin: 10px 0 0;
+  margin: 10px 0 0;
 }
 
 .buttonGame {
-    border-radius: 2.5rem;
-    font-size: 1rem;
-    cursor: pointer;
-    text-decoration: none;
-    border: none;
-    padding: 1rem 2rem;
-    background-color: #545fac;
-    color: #fff;
-    width: 8rem;
+  border-radius: 2.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  padding: 1rem 2rem;
+  background-color: #545fac;
+  color: #fff;
+  width: 8rem;
 
-    /* display: flex; */
-    /* align-items: center;
+  /* display: flex; */
+  /* align-items: center;
     justify-content: center;
     text-align: center; */
 }
 
-
 .buttonGame:hover {
-    background-color: #a58cfc;
+  background-color: #a58cfc;
 }
 
 @media (max-width: 600px) {
-    .weapon {
-        flex-direction: column;
-    }
+  .header {
+    padding: 0.5rem;
+  }
 
-    .score {
-        flex-direction: column;
-    }
+  .header h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
 
-    .score label {
-        margin: 10px 0;
-    }
+  .paraChoose,
+  .endGame {
+    font-size: 1rem;
+    margin: 0.25rem 0;
+  }
+  /* .weapon {
+    flex-direction: row;
+  }
 
-    .choose {
-        flex-direction: column;
-    }
+  .score {
+    flex-direction: column;
+  } */
 
+  .score label {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
 
-    .choose .inputImg {
-        margin: 0.5rem 0;
-        width: 6rem;
-        height: auto;
-    }
+  .choose {
+    flex-direction: row;
+  }
 
-    .weapon img {
-        width: 6rem;
-        height: auto;
-        margin: 0.5rem 0;
-    }
+  .choose .inputImg {
+   
+    width: 6rem;
+    height: 4rem;
+    object-fit:scale-down;
+  }
+
+  .weapon img {
+    width: 6rem;
+    height: 4rem;
+   
+    object-fit: scale-down;
+  }
+
+  
 }
